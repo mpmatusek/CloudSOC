@@ -50,13 +50,13 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
 ## Attack Maps Before Hardening / Security Controls
 <h3>NSG Malicious Traffic - World Map</h3>
-![NSG Malicious Traffic 24h](https://github.com/mpmatusek/CloudSOC/assets/167713753/7f738817-e39e-4e5f-a25c-09eff45c8093)
+(https://github.com/mpmatusek/CloudSOC/assets/167713753/af9fbc7e-37e6-4ca4-b8f2-c174e5205bf2)
 
 <h3>Windows Malicious Traffic - World Map</h3>
-![Windows Malicious Traffic 24h](https://github.com/mpmatusek/CloudSOC/assets/167713753/bd58c657-83c1-4235-b8f2-f0898cd5b7ee)
+(https://github.com/mpmatusek/CloudSOC/assets/167713753/bfcf277b-97ba-44a0-a8df-f5d1ce81fea7)
 
 <h3>Linux Malicious Traffic - World Map</h3>
-![Linux Attack Map 24h](https://github.com/mpmatusek/CloudSOC/assets/167713753/da83339d-b6a8-43de-ab4d-9abf9cbf5c8c)
+(https://github.com/mpmatusek/CloudSOC/assets/167713753/ea52e63b-8238-4b02-9dad-fdc36eb81ec6)
 
 ## Metrics Before Hardening / Security Controls
 
@@ -92,6 +92,8 @@ Stop Time	2024-05-12 09:34
 
 ## Conclusion
 
-In this project, a mini honeynet was constructed in Microsoft Azure and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness.
+In this project, we established a miniature honeynet within Microsoft Azure, integrating various log sources into a Log Analytics workspace. Leveraging Microsoft Sentinel, we configured the system to trigger alerts and generate incidents based on the ingested logs.
 
-It is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.
+Furthermore, we conducted metric assessments within the vulnerable environment both before and after the implementation of security measures. Notably, the results revealed a significant reduction in the frequency of security events and incidents post-implementation, underscoring the efficacy of the applied security controls.
+
+It's important to acknowledge that had the network resources been actively utilized by regular users, it's plausible that a greater volume of security events and alerts would have been observed within the 24-hour period following the deployment of the security controls.
