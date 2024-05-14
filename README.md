@@ -27,24 +27,34 @@
 ## Architecture After Hardening / Security Controls
 ![Hardened Azure Environment](https://github.com/mpmatusek/CloudSOC/assets/167713753/0cf0845c-a2c7-4cdc-8610-6871f4fd5381)
 
-The architecture of the mini honeynet in Azure consists of the following components:
+<h3>Components:</h3>
+<ul>
+  <li>Virtual Network (VNet)</li>
+  <li>Network Security Group (NSG)</li>
+  <li>Virtual Machines (2 Windows, 1 Linux)</li>
+  <li>Log Analytics Workspace</li>
+  <li>Azure Key Vault</li>
+  <li>Azure Storage Account</li>
+  <li>Microsoft Sentinel</li>
+</ul>
 
-- Virtual Network (VNet)
-- Network Security Group (NSG)
-- Virtual Machines (2 windows, 1 linux)
-- Log Analytics Workspace
-- Azure Key Vault
-- Azure Storage Account
-- Microsoft Sentinel
-
+<h3>Before Metrics:</h3>
+<p>
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+</p>
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+<h3>After Metrics:</h3>
+<p>
+For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint.
+</p>
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+<h3>NSG Malicious Traffic - World Map</h3>
+![NSG Malicious Traffic 24h](https://github.com/mpmatusek/CloudSOC/assets/167713753/09aea9e6-d19b-4d67-a69c-15025e8175dd)
+<h3>Windows Malicious Traffic - World Map</h3>
+![Windows Malicious Traffic 24h](https://github.com/mpmatusek/CloudSOC/assets/167713753/c4b1231e-1951-4ae2-8990-38c07caf5b3c)
+<h3>Linux Malicious Traffic - World Map</h3>
+![Linux Attack Map 24h](https://github.com/mpmatusek/CloudSOC/assets/167713753/495e6889-0de1-4a45-8c5b-7b17ba1bb7cd)
 
 ## Metrics Before Hardening / Security Controls
 
