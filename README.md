@@ -50,11 +50,13 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
 ## Attack Maps Before Hardening / Security Controls
 <h3>NSG Malicious Traffic - World Map</h3>
-![NSG Malicious Traffic 24h](https://github.com/mpmatusek/CloudSOC/assets/167713753/09aea9e6-d19b-4d67-a69c-15025e8175dd)
+![NSG Malicious Traffic 24h](https://github.com/mpmatusek/CloudSOC/assets/167713753/7f738817-e39e-4e5f-a25c-09eff45c8093)
+
 <h3>Windows Malicious Traffic - World Map</h3>
-![Windows Malicious Traffic 24h](https://github.com/mpmatusek/CloudSOC/assets/167713753/c4b1231e-1951-4ae2-8990-38c07caf5b3c)
+![Windows Malicious Traffic 24h](https://github.com/mpmatusek/CloudSOC/assets/167713753/bd58c657-83c1-4235-b8f2-f0898cd5b7ee)
+
 <h3>Linux Malicious Traffic - World Map</h3>
-![Linux Attack Map 24h](https://github.com/mpmatusek/CloudSOC/assets/167713753/495e6889-0de1-4a45-8c5b-7b17ba1bb7cd)
+![Linux Attack Map 24h](https://github.com/mpmatusek/CloudSOC/assets/167713753/da83339d-b6a8-43de-ab4d-9abf9cbf5c8c)
 
 ## Metrics Before Hardening / Security Controls
 
