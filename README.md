@@ -3,19 +3,29 @@
 
 ## Introduction
 
-In this project, I build a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, apply some security controls to harden the environment, measure metrics for another 24 hours, then show the results below. The metrics we will show are:
+<p>In this project, I set up a small network security system in Microsoft Azure, a powerful cloud platform. I gathered logs from different sources and stored them in one central place called Log Analytics. This helps Microsoft Sentinel, a smart security tool, to spot potential threats, send alerts, and take action quickly.</p>
 
-- SecurityEvent (Windows Event Logs)
-- Syslog (Linux Event Logs)
-- SecurityAlert (Log Analytics Alerts Triggered)
-- SecurityIncident (Incidents created by Sentinel)
-- AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+<p>I split the project into two main parts. First, I looked at how secure the system was without any extra protection for 24 hours. Then, I added some security measures and watched for another 24 hours to see if they made a difference. Here are the things I looked at:</p>
+
+<ul>
+  <li><b>SecurityEvent</b>: These are like a diary of what's happening on Windows computers. They help us see if anything unusual is going on.</li>
+
+  <li><b>Syslog</b>: This is similar but for Linux systems. It helps us understand what's happening on those computers.</li>
+
+  <li><b>SecurityAlert</b>: These are warning signs that something might be wrong. They help us catch problems early.</li>
+
+  <li><b>SecurityIncident</b>: These are real issues that have been spotted and dealt with. They show how well our system responds to threats.</li>
+
+  <li><b>AzureNetworkAnalytics_CL</b>: This tells us about any suspicious activity in the network. It's like our first line of defense against hackers trying to get in.</li>
+</ul>
+
+<p>By doing this, we can see how effective our security measures are and make improvements where needed.</p>
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+![Unhardened Azure Environment'](https://github.com/mpmatusek/CloudSOC/assets/167713753/ee68271d-3e25-41d8-9dbe-03d253a1fa9c)
 
 ## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+![Hardened Azure Environment](https://github.com/mpmatusek/CloudSOC/assets/167713753/0cf0845c-a2c7-4cdc-8610-6871f4fd5381)
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
